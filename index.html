@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mario Bros</title>
+  </head>
+
+  <body>
+    <div class="mascara-formulario" onclick="hideform()"></div>
+    </div>
+
+    <div class="header">
+        <img src="./img/mario_cube.gif" alt="Cubo mario bros">
+        <a>Home</a>
+        <a href="Nossos-servicos.html">Nossos Serviços</a>
+        <a onclick="showform()">Fale Conosco</a>
+    </div>
+
+
+    <div class="caixa-mae">
+      <div class="caixa-principal">
+        <img
+          class="logo_mario"
+          src="./img/logo.png"
+          alt="Logotipo de Super Mario bros."
+        />
+        <p class="introduçao">
+          Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com
+          Estilo!
+        </p>
+        <p class="introduçao-2">
+          Você já se encontrou em uma situação de emergência com encanamento?
+          Vazamentos inesperados, canos entupidos ou torneiras que não param de
+          pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+          Apresentamos a vocês os encanadores mais famosos do Reino dos
+          Cogumelos - Mario e Luigi!
+        </p>
+
+        <button onclick="showform()">Entre em contato</button>
+      </div>
+
+      <div>
+        <img
+          class="mario_bros"
+          src="./img/mario.png"
+          alt="Imagem dos irmãos Mario"
+        />
+      </div>
+    </div>
+
+    <div class="caixa-video">
+      <video src="./img/video/video.mp4" autoplay muted loop></video>
+      <div class="mascara"></div>
+    </div>
+
+    <a href="https://wa.link/36fy6l" class="link-whatsapp">
+      <img src="./img/whatsapp.png" alt="link para o whatsapp" />
+    </a>
+    <form 
+        class="fale-conosco"  
+         action="https://formcarry.com/s/UgHMqoZBk5W"
+        method="POST"
+        enctype="multipart/form-data">
+            <input placeholder="Seu Nome" type="text" name="nome">
+            <input placeholder="Seu melhor e-mail" type="email" name="email">
+            <input placeholder="Celular" type="tel" name="telefone">
+            <textarea placeholder="Conte o seu problema" name="duvida"></textarea>
+            <button class="contato" type="submit">Pedir orçamento</button>
+    </form>
+  </body>
+  <script src="scripts.js"></script>
+</html>
